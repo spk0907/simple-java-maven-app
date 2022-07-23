@@ -30,9 +30,9 @@ jobs:
         - name: SSH Server Deploy
           uses: easingthemes/ssh-deploy@v2.2.11
           with:
-           host: ${{ secrets.AWS_HOST_NAME }}
-           port: 22
-           username: ${{ secrets.AWS_USERNAME }}
-           private_key: ${{ secrets.AWS_PRIVATE_KEY }}
+           REMOTE_HOST: ${{ secrets.AWS_HOST_NAME }}
+           REMOTE_PORT: 22
+           REMOTE_USER: ${{ secrets.AWS_USERNAME }}
+           SSH_PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY }}
     
          
