@@ -28,7 +28,7 @@ jobs:
        runs-on: self-hosted
        steps:
         - name: SSH Server Deploy
-          uses: kostya-ten/ssh-server-deploy@v4
+          uses: spk0907/ssh-server-deploy@v2
           with:
     
            host: ${{ secrets.AWS_HOST_NAME }}
