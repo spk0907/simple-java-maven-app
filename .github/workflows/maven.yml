@@ -30,7 +30,6 @@ jobs:
         - name: SSH Server Deploy
           uses: spk0907/ssh-server-deploy@v2
           with:
-    
            host: ${{ secrets.AWS_HOST_NAME }}
            port: 22
            username: ${{ secrets.AWS_USERNAME }}
