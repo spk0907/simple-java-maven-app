@@ -28,7 +28,7 @@ jobs:
        runs-on: self-hosted
        steps:
         - name: SSH Server Deploy
-          uses: spk0907/ssh-server-deploy@v2
+          uses: easingthemes/ssh-deploy@v2.2.11
           with:
            host: ${{ secrets.AWS_HOST_NAME }}
            port: 22
