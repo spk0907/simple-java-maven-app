@@ -28,7 +28,7 @@ jobs:
        runs-on: self-hosted
        steps:
         - name: SSH Server Deploy
-          uses: easingthemes/ssh-deploy@v2.2.11
+          uses: easingthemes/ssh-deploy@v2
           with:
            REMOTE_HOST: ${{ secrets.AWS_HOST_NAME }}
            REMOTE_PORT: 22
